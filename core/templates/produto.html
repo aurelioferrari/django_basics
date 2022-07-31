@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ produto.nome }}</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+    <center>
+    <h1>Detalhes do produto</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Estoque</th>
+
+            </tr>
+        </thead>
+
+                <tr>
+                    <td><a href="{% url 'produto' produto.id %}" >{{ produto.nome }}</td>
+                    <td>{{ produto.preco }}</td>
+                    <td>{{ produto.estoque }}</td>
+                </tr>
+
+    </table>
+    <a href="{% url 'index' %}" >Voltar ao menu inicial</a>
+    </center>
+</body>
+</html>
