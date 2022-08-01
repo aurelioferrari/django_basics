@@ -11,26 +11,26 @@
 </head>
 <body>
     <center>
-    <h1>Index</h1>
-    <img src="{% static 'images/django.png' %}">
+    <h1>Página de Produtos</h1>
+    <img src="{% static 'images/django.png' %}" width="100px">
     <table>
         <thead>
             <tr>
-                <th>Produto</th>
-                <th>Preço</th>
+                <th>Escolha um Produto</th>
+
 
             </tr>
         </thead>
             {% for produto in produtos %}
                 <tr>
                     <td><a href="{% url 'produto' produto.id %}" >{{ produto.nome }}</td>
-                    <td>{{ produto.preco }}</td>
+
 
                 </tr>
             {% endfor %}
     </table>
 
-    <button onclick="teste();">Clique aqui</button>
+    <button onclick="teste();">Botão de teste</button>
     </center>
     <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </body>
