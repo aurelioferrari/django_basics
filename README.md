@@ -5,7 +5,7 @@
 </p>
 
 <p> It is a pretty standard website to browse through a few products.<br>
-They are connected to a database in which you can add, modify or delete a new product which will automaticaly be added to the main page and an unique page for every produt will be also be created.
+They are connected to a database in which you can add, modify or delete a new product which will automaticaly be added to the main page and an unique page for every produt will also be created.
 </p>
 
 <p>Heroku was used to publish the application.</p>
